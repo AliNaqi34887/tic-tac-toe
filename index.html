@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game login page</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <span id = "x" style="display: none;">X</span>
+    <span id = "y" style="display: none;">Y</span>
+    <div class = "alert">
+        <h1 id = "alert" class = "form1">Please! Enter your names</h1>
+    </div>
+    <div id = "loginPage" class= "login-page">
+        <div class="form">
+            <h1 class= "heading">Enter Your Names</h1>
+            <input type="text" placeholder="Player 1 (x)" id = "playerOne"/>
+            <input type="text" placeholder="Player 2 (o)" id = "playerTwo"/>
+            <button id = "playGame">Play</button>
+        </div>
+    </div>
+
+    
+
+    <div class="game-page">
+        <div class = "answer-div">
+            <h1 id = "answer" class = "answer"></h1>
+        </div>
+
+        
+        <div class="tictactoe-board" id = "game">
+            <div class="button border-right border-bottom" id = "1" onclick = "play('1')">
+                
+            </div>
+            <div class="button border-right border-bottom" id = "2" onclick = "play('2')">
+                
+            </div>
+            <div class="button border-bottom" onclick = "play('3')" id = "3" >
+                
+            </div>
+            <div class="button border-right border-bottom clear" id = "4" onclick = "play('4')">
+                
+            </div>
+            <div class="button border-right border-bottom"  id = "5" onclick = "play('5')"> 
+                
+            </div>
+            <div class="button border-bottom" onclick = "play('6')" id = "6" >
+                
+            </div>
+            <div class="button border-right clear" onclick = "play('7')" id = "7" >
+                
+            </div>
+            <div class="button border-right" onclick = "play('8')" id = "8" >
+                
+            </div>
+            <div class="button border" onclick = "play('9')" id = "9" >
+                
+            </div>
+            
+        </div>
+
+
+        <button id = "restart" class = "restart" onclick="reset('restart')">Restart</button>
+        <button id ="newGame" class = "new-game" >New Game</button>
+    </div>
+</body>
+</body>
+</html>
